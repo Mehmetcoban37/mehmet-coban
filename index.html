@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Milyon TL — 60 Saniyelik Short</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="video" id="video" aria-label="100 milyon TL banka hatası animasyonu">
+      <button class="start-screen" id="startScreen" type="button">
+        <span class="start-icon">▶</span>
+        <strong>VİDEOYU BAŞLAT</strong>
+        <small>60 SANİYE · SESLİ</small>
+      </button>
+      <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+      <header class="topbar">
+        <div class="brand"><span>₺</span> PARA MESELESİ</div>
+        <div class="counter" id="counter">00:00</div>
+      </header>
+
+      <div class="scene active" data-start="0" data-end="5" data-title="100.000.000 TL!">
+        <div class="burst"></div>
+        <div class="person surprised"><div class="head"><b></b></div><div class="body"></div></div>
+        <div class="phone hero-phone">
+          <div class="notch"></div><div class="bank-head"><span class="bank-logo">B</span><span>Mobil Banka</span></div>
+          <small>TOPLAM VARLIK</small><strong>100.000.000<em> TL</em></strong><div class="gain">▲ %9.999.999</div>
+        </div>
+        <div class="eyebrow">BANKA HATASI</div><h1>100.000.000 TL!</h1>
+      </div>
+
+      <div class="scene" data-start="5" data-end="13" data-title="Harcasan ne olur?">
+        <div class="dream-cloud"><span class="dream car">◆<i>● ●</i></span><span class="dream house">⌂</span><span class="dream plane">✈</span></div>
+        <div class="money-rain" aria-hidden="true"><i>₺</i><i>₺</i><i>₺</i><i>₺</i><i>₺</i><i>₺</i></div>
+        <div class="person happy"><div class="head"><b></b></div><div class="body"></div></div>
+        <div class="freeze"><span>❄</span> DUR!</div><h1>Harcasan ne olur?</h1>
+      </div>
+
+      <div class="scene" data-start="13" data-end="23" data-title="Para sana ait olmayabilir.">
+        <div class="dashboard">
+          <div class="dash-top"><span>İŞLEM MERKEZİ</span><b>CANLI</b></div><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="transaction"><span>ANORMAL İŞLEM</span><strong>₺100.000.000</strong></div><div class="error">! HATA TESPİT EDİLDİ</div>
+        </div>
+        <div class="workers"><span>👨‍💻</span><span>👩‍💻</span></div><h1>Para sana ait<br><mark>olmayabilir.</mark></h1>
+      </div>
+
+      <div class="scene" data-start="23" data-end="35" data-title="Harcama = Risk">
+        <div class="transfer-phone phone"><div class="notch"></div><small>PARA TRANSFERİ</small><strong>100.000.000 TL</strong><button>GÖNDER</button></div>
+        <div class="transfer-line"><i></i><span>➜</span></div><div class="account">₺</div>
+        <div class="alarm"><span>!</span><b>ŞÜPHELİ İŞLEM</b></div><h1>Harcama <mark>= Risk</mark></h1>
+      </div>
+
+      <div class="scene" data-start="35" data-end="47" data-title="Banka geri isteyebilir.">
+        <div class="legal-orbit"><div class="bank">▥<b>BANKA</b></div><div class="folder">HUKUK<br><b>DOSYASI</b></div><div class="gavel">⚖</div><div class="refund">↩<b>100M ₺</b></div></div>
+        <div class="route"></div><h1>Banka geri<br><mark>isteyebilir.</mark></h1>
+      </div>
+
+      <div class="scene" data-start="47" data-end="56" data-title="Dokunma. Bankayı ara.">
+        <div class="safe-ring"><i></i><span>✓</span></div>
+        <div class="call-phone phone"><div class="notch"></div><small>BANKA MÜŞTERİ HİZMETLERİ</small><div class="avatar">B</div><b>00:<span id="callSeconds">01</span></b><div class="hangup">☎</div></div>
+        <div class="person calling"><div class="head"><b></b></div><div class="body"></div></div><h1>Dokunma.<br><mark>Bankayı ara.</mark></h1>
+      </div>
+
+      <div class="scene" data-start="56" data-end="60" data-title="Sen olsan paraya dokunur muydun?">
+        <div class="phone final-phone"><div class="notch"></div><small>TOPLAM VARLIK</small><strong class="old-balance">100.000.000 TL</strong><strong class="new-balance">12.450 TL</strong></div>
+        <div class="person sad"><div class="head"><b></b></div><div class="body"></div></div>
+        <div class="comment"><span>💬</span><b>YORUMLARA YAZ!</b></div><h1>Sen olsan paraya<br><mark>dokunur muydun?</mark></h1>
+      </div>
+
+      <div class="caption-wrap"><div class="caption" id="caption"></div></div>
+      <div class="progress"><i id="progress"></i></div>
+      <div class="flash" id="flash"></div>
+    </section>
+
+    <nav class="controls" aria-label="Video kontrolleri">
+      <button id="play" class="primary">▶ Başlat</button>
+      <button id="sound" aria-label="Sesi aç veya kapat">🔊</button>
+      <input id="seek" type="range" min="0" max="60" step="0.01" value="0" aria-label="Zaman çizelgesi">
+      <button id="fullscreen" aria-label="Tam ekran">⛶</button>
+    </nav>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
